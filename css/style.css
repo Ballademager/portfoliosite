@@ -1,6 +1,7 @@
 html {
   --primary: #bada55;
   --secondary: #b4b4b4;
+  --tertiary: #555555;
   --accent: #ff7d00;
   --black: #000000;
   --white: #ffffff;
@@ -46,13 +47,14 @@ header h1 {
   letter-spacing: 3px;
 }
 nav {
-  min-width: 25%;
-  margin-right: 3rem;
-  margin-top: 2rem;
+  min-width: 35%;
+  margin-right: var(--space-xl);
+  margin-top: var(--space-lg);
 }
 .headerflex {
   display: flex;
   justify-content: space-between;
+  gap: var(--space-sm);
 }
 header ul {
   list-style: none;
@@ -81,6 +83,9 @@ p,
 dl {
   color: var(--white);
 }
+h1 {
+  font-family: "open_sans_800", cursive;
+}
 dl {
   font-family: "open_sans";
 }
@@ -99,7 +104,7 @@ h2 {
   font-family: "open_sans_600", cursive;
 }
 section {
-  padding: 1rem 5rem;
+  margin: var(--space-sm) var(--space-xxl);
 }
 .flexitemright {
   display: flex;
