@@ -31,6 +31,8 @@ body {
 }
 main {
   position: relative;
+  margin: auto;
+  max-width: 1000px;
 }
 header {
   border-bottom: solid 2px var(--white);
@@ -124,16 +126,16 @@ h2 {
   height: 0.2rem;
 }
 .border_box {
-  border-top: 1px solid var(--accent);
-  border-left: 1px solid var(--accent);
-  border-right: 1px solid var(--white);
-  border-bottom: 1px solid var(--white);
+  border-top: 3px solid var(--accent);
+  border-left: 3px solid var(--accent);
+  border-right: 3px solid var(--white);
+  border-bottom: 3px solid var(--white);
   padding-left: var(--space-md);
   padding-right: var(--space-md);
 }
 .halfbox_top {
-  border-top: 1px solid var(--accent);
-  border-left: 1px solid var(--accent);
+  border-top: 3px solid var(--accent);
+  border-left: 3px solid var(--accent);
   padding-left: var(--space-md);
   padding-right: var(--space-md);
 }
@@ -150,12 +152,12 @@ h2 {
   padding-right: var(--space-md);
 }
 .fullbox_white {
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
   padding-left: var(--space-sm);
   padding-right: var(--space-sm);
 }
 .fullbox_orange {
-  border: 1px solid var(--accent);
+  border: 2px solid var(--accent);
   padding-left: var(--space-sm);
   padding-right: var(--space-sm);
 }
@@ -182,7 +184,34 @@ header li:hover {
   background-color: #222222;
   background-image: linear-gradient(45deg, #222222 0%, #b4b4b4 100%);
 }
-
+.btn {
+  text-decoration: none;
+  font-family: "open_sans_600", cursive;
+  color: var(--white);
+  border: var(--white) 2px solid;
+  border-radius: 2px;
+  width: 7vw;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #555555;
+  transition: 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transform: scale(1.1);
+  box-shadow: 0 5px 25px var(--accent);
+}
+.font_size {
+  font-size: 110%;
+  line-height: 150%;
+}
+.grid_udbytte {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr 8fr;
+  gap: var(--space-sm);
+}
 /* @media (min-width: 1000px) {
   section {
     margin: auto;

@@ -51,10 +51,35 @@ section ul {
   color: var(--white);
   font-family: "open_sans", cursive;
 }
-.grid_1-1-1-1-1-1 {
+.grid_1-1-1 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: var(--space-sm);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+#first_sec {
+  margin-bottom: 3vw;
+}
+#marg_top {
+  margin-top: 3vw;
+}
+#second_sec {
+  margin-bottom: 3vw;
+}
+#second_sec li {
+  margin-bottom: 0.25rem;
+}
+#third_sec {
+  margin-top: 3vw;
+}
+#fourth_sec {
+  margin-bottom: 3vw;
+}
+#fourth_sec ul {
+  padding: 0;
+  padding-left: 1rem;
+}
+#fourth_sec li {
+  margin-bottom: 0.5rem;
 }
 /* .makeflex {
   display: flex;

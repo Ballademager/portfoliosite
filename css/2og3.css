@@ -35,9 +35,6 @@ main {
 #website img {
   height: 30vw;
 }
-#website p {
-  /* line-height: 150%; */
-}
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -46,24 +43,6 @@ main {
 
 .grid_1-1 :last-child {
   border: 1px solid var(--white);
-}
-.btn {
-  text-decoration: none;
-  font-family: "open_sans_600", cursive;
-  color: var(--white);
-  border: var(--white) 2px solid;
-  border-radius: 2px;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  text-align: center;
-  background-color: #555555;
-  transition: 0.2s ease-in-out;
-}
-.btn:hover {
-  background-color: var(--white);
-  color: var(--black);
-  transform: scale(1.1);
-  box-shadow: 0 5px 25px var(--accent);
 }
 .makeflex {
   display: flex;
@@ -81,10 +60,6 @@ main {
 .flexit {
   display: flex;
   gap: var(--space-md);
-}
-.grid_udbytte {
-  display: grid;
-  grid-template-columns: 1fr 4fr 8fr;
 }
 /* .grid-view div {
   border: 1px dotted red;

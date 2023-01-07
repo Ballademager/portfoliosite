@@ -1,7 +1,0 @@
-body {
-  position: relative;
-}
-.grid_udbytte {
-  display: grid;
-  grid-template-columns: 1fr 4fr 8fr;
-}
