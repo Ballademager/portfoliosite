@@ -29,6 +29,9 @@ body {
   background-color: var(--black);
   margin: 0;
 }
+main {
+  position: relative;
+}
 header {
   border-bottom: solid 2px var(--white);
   margin: 0;
@@ -103,9 +106,11 @@ p {
 h2 {
   font-family: "open_sans_600", cursive;
 }
-section {
-  margin: var(--space-sm) var(--space-xxl);
-}
+/* section {
+  margin: auto;
+  max-width: 70vw;
+  /* margin: var(--space-sm) var(--space-xxl); */
+
 .flexitemright {
   display: flex;
   justify-content: right;
@@ -132,11 +137,27 @@ section {
   padding-left: var(--space-md);
   padding-right: var(--space-md);
 }
+.halfbox_top_white {
+  border-top: 1px solid var(--white);
+  border-left: 1px solid var(--white);
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
+}
 .halfbox_bot {
   border-bottom: 1px solid var(--white);
   border-right: 1px solid var(--white);
   padding-left: var(--space-md);
   padding-right: var(--space-md);
+}
+.fullbox_white {
+  border: 1px solid var(--white);
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
+}
+.fullbox_orange {
+  border: 1px solid var(--accent);
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
 }
 .linebreak {
   margin: var(--space-md) 0;
@@ -161,3 +182,10 @@ header li:hover {
   background-color: #222222;
   background-image: linear-gradient(45deg, #222222 0%, #b4b4b4 100%);
 }
+
+/* @media (min-width: 1000px) {
+  section {
+    margin: auto;
+    max-width: 70vw;
+  }
+} */

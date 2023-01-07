@@ -51,9 +51,9 @@ section ul {
   color: var(--white);
   font-family: "open_sans", cursive;
 }
-.grid_1-1-1-1-1 {
+.grid_1-1-1-1-1-1 {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: var(--space-sm);
 }
 /* .makeflex {
