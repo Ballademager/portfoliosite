@@ -11,15 +11,15 @@ function sidenVises() {
   document.querySelector("#ani_6").addEventListener("mousedown", hoverSix);
 
   function hoverOne() {
-    this.classList.add("bouncing");
+    this.classList.add("pulse");
     this.addEventListener("animationend", done);
   }
   function hoverTwo() {
-    this.classList.add("rotation");
+    this.classList.add("bouncing");
     this.addEventListener("animationend", done);
   }
   function hoverThree() {
-    this.classList.add("pulse");
+    this.classList.add("rotation");
     this.addEventListener("animationend", done);
   }
   function hoverFour() {

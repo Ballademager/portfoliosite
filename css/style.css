@@ -156,10 +156,16 @@ h2 {
   padding-left: var(--space-sm);
   padding-right: var(--space-sm);
 }
+.fullbox_white2 {
+  border: 2px solid var(--white);
+}
 .fullbox_orange {
   border: 2px solid var(--accent);
   padding-left: var(--space-sm);
   padding-right: var(--space-sm);
+}
+.fullbox_orange2 {
+  border: 2px solid var(--accent);
 }
 .linebreak {
   margin: var(--space-md) 0;
@@ -177,8 +183,10 @@ header li:hover {
   background-image: linear-gradient(135deg, #222222 0%, #b4b4b4 100%);
 }
 .greybox2 {
-  background-color: #b4b4b4;
-  background-image: linear-gradient(45deg, #b4b4b4 0%, #222222 100%);
+  border-radius: 45px;
+  background: radial-gradient(var(--black), var(--white));
+  /* background-color: #b4b4b4;
+  background-image: linear-gradient(45deg, #b4b4b4 0%, #222222 100%); */
 }
 .greybox3 {
   background-color: #222222;
@@ -197,6 +205,10 @@ header li:hover {
   background-color: #555555;
   transition: 0.2s ease-in-out;
 }
+/* .btn {
+   background-image: linear-gradient(to right, #b4b4b4 0%, #555555 51%, #b4b4b4 100%);
+} */
+
 .btn:hover {
   background-color: var(--white);
   color: var(--black);

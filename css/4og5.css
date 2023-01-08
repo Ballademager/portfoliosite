@@ -1,8 +1,22 @@
 #first_sec {
   margin-bottom: 3vw;
+  margin-top: 3vw;
 }
 #second_sec {
   margin-bottom: 3vw;
+}
+#third_sec {
+  margin-bottom: 3vw;
+}
+#fourth_sec {
+  margin-top: 3vw;
+}
+#fifth_sec {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+.marg_top {
+  margin-top: 4vw;
 }
 .grid_1-2 {
   display: grid;
@@ -12,7 +26,7 @@
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-content: center;
+  align-items: center;
   justify-items: center;
 }
 #tv_container,
@@ -27,12 +41,6 @@
   width: 100%;
   height: 100%;
   background-image: url(../assets/god_ide.svg);
-  background-size: cover;
-}
-#kaffe_sprite {
-  width: 100%;
-  height: 100%;
-  background-image: url(../assets/kaffe.svg);
   background-size: cover;
 }
 #tv_sprite {
@@ -50,25 +58,32 @@
 #figure_btn {
   width: 50%;
   height: 25%;
-  align-self: center;
+  align-self: flex-end;
+  margin-bottom: 10%;
 }
 
-.grid_3-1 {
+.grid_5-2 {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 5fr 2fr;
+  gap: var(--space-md);
 }
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  row-gap: var(--space-lg);
+  align-content: center;
+  justify-items: center;
 }
+
 #ani_1,
 #ani_2,
 #ani_3,
 #ani_4,
 #ani_5,
 #ani_6 {
-  width: 40%;
+  width: 50%;
   aspect-ratio: 1/1;
+  padding: var(--space-md);
 }
 #ani_1,
 #ani_2,
@@ -78,13 +93,25 @@
 #ani_6:hover {
   cursor: pointer;
 }
-#vaske1 {
+#ani_1 {
+  position: relative;
+}
+#vaske::after {
+  display: block;
+  position: absolute;
+  content: "'Click me'";
+  color: var(--white);
+  font-family: "open_sans", cursive;
+  bottom: 30%;
+  left: 80%;
+}
+#vaske {
   width: 100%;
   height: 100%;
   background-image: url(../assets/vasketøj.svg);
   background-size: cover;
 }
-#tv1 {
+#tv {
   width: 100%;
   height: 100%;
   background-image: url(../assets/tv.svg);
@@ -97,7 +124,7 @@
   background-size: cover;
 }
 
-#ide1 {
+#ide {
   width: 100%;
   height: 100%;
   background-image: url(../assets/god_ide.svg);
@@ -117,19 +144,23 @@
 }
 .bouncing {
   animation-name: bouncing;
-  animation-duration: 1s;
-  /* animation-iteration-count: infinite; */
-  animation-iteration-count: 3;
-  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
   animation-timing-function: linear;
 }
 
 @keyframes bouncing {
   0% {
+    translate: 0 0;
+  }
+  25% {
     translate: 0 -150%;
   }
-  100% {
+  75% {
     translate: 0 150%;
+  }
+  100% {
+    translate: 0 0;
   }
 }
 .pattern {
@@ -206,7 +237,7 @@
   }
 }
 .pulse {
-  animation: pulse 1s 5 ease-in;
+  animation: pulse 1s 2 ease-in;
 }
 
 @keyframes pulse {
@@ -227,4 +258,34 @@
     /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); */
     border-radius: 50%;
   }
+}
+
+.grid_3-2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  gap: var(--space-md);
+}
+.makeflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.makeflex .btn {
+  width: fit-content;
+  padding: var(--space-sm);
+  margin-bottom: 1rem;
+}
+.grid_4-3 {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  gap: var(--space-md);
+}
+/* #pp_img {
+  max-width: 500px;
+} */
+#pp_img img {
+  /* max-width: 500px; */
+  width: 100%;
 }
