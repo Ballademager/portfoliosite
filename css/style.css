@@ -180,7 +180,7 @@ header li:hover {
 }
 .greybox {
   background-color: #222222;
-  background-image: linear-gradient(135deg, #222222 0%, #b4b4b4 100%);
+  background-image: linear-gradient(135deg, #222222 0%, #979797 100%);
 }
 .greybox2 {
   border-radius: 45px;
@@ -190,7 +190,7 @@ header li:hover {
 }
 .greybox3 {
   background-color: #222222;
-  background-image: linear-gradient(45deg, #222222 0%, #b4b4b4 100%);
+  background-image: linear-gradient(45deg, #222222 0%, #979797 100%);
 }
 .btn {
   text-decoration: none;
@@ -208,7 +208,16 @@ header li:hover {
 /* .btn {
    background-image: linear-gradient(to right, #b4b4b4 0%, #555555 51%, #b4b4b4 100%);
 } */
-
+.makeflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.makeflex .btn {
+  width: fit-content;
+  padding: var(--space-sm);
+}
 .btn:hover {
   background-color: var(--white);
   color: var(--black);
@@ -223,6 +232,9 @@ header li:hover {
   display: grid;
   grid-template-columns: 0.5fr 4fr 8fr;
   gap: var(--space-sm);
+}
+.marg_top {
+  margin-top: 4vw;
 }
 /* @media (min-width: 1000px) {
   section {
