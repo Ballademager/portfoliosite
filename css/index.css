@@ -5,8 +5,19 @@
 #second_sec {
   margin-top: 3vw;
 }
-
+#second_sec p {
+  max-width: 65ch;
+  padding: var(--space-sm);
+}
+#third_sec {
+  margin-bottom: 3vw;
+}
 .grid_3-1 {
   display: grid;
   grid-template-columns: 3fr 1fr;
+}
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
 }

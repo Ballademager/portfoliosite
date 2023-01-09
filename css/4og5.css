@@ -83,7 +83,7 @@
 #ani_6 {
   width: 50%;
   aspect-ratio: 1/1;
-  padding: var(--space-md);
+  padding: var(--space-sm);
 }
 #ani_1,
 #ani_2,

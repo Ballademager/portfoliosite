@@ -18,7 +18,8 @@
 }
 .grid_3-2 img {
   justify-content: right;
-  max-width: 400px;
+  aspect-ratio: 400/436;
+  max-width: 100%;
 }
 .grid_2-3 {
   display: grid;

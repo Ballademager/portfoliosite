@@ -226,9 +226,9 @@ p {
   padding-right: var(--space-sm);
 }
 .fullbox_white {
-  border: 3px solid var(--white);
-  padding-left: var(--space-sm);
-  padding-right: var(--space-sm);
+  border: 2px solid var(--white);
+  border-radius: 5px;
+  overflow: hidden;
 }
 .fullbox_white2 {
   border: 3px solid var(--white);
