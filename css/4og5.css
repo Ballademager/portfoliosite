@@ -13,6 +13,9 @@
 }
 #fifth_sec {
   margin-top: 3vw;
+}
+#sixth_sec {
+  margin-top: 3vw;
   margin-bottom: 3vw;
 }
 .grid_1-2 {
@@ -64,7 +67,7 @@
   grid-template-columns: 5fr 2fr;
   gap: var(--space-md);
 }
-.grid_1-1-1 {
+.anigrid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: var(--space-lg);
@@ -151,10 +154,10 @@
     translate: 0 0;
   }
   25% {
-    translate: 0 -150%;
+    translate: 0 -100%;
   }
   75% {
-    translate: 0 150%;
+    translate: 0 100%;
   }
   100% {
     translate: 0 0;
@@ -175,19 +178,19 @@
     translate: 0 0;
   }
   17% {
-    translate: 150% 150%;
+    translate: 100% 100%;
   }
   33% {
-    translate: -150% 150%;
+    translate: -100% 100%;
   }
   49% {
     translate: 0 0;
   }
   66% {
-    translate: 150% -150%;
+    translate: 100% -100%;
   }
   83% {
-    translate: -150% -150%;
+    translate: -100% -100%;
   }
   100% {
     translate: 0 0%;
@@ -203,7 +206,7 @@
     scale: 1;
   }
   100% {
-    scale: 4;
+    scale: 3;
   }
 }
 .fade_out {
@@ -285,6 +288,14 @@
   display: grid;
   grid-template-columns: 4fr 3fr;
   gap: var(--space-md);
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-md);
+  align-content: center;
+  justify-items: center;
 }
 /* #fifth_sec .btn {
   margin-top: 1rem;
