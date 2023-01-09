@@ -211,7 +211,7 @@
 }
 .fade_out {
   animation: fade_out;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
 }
