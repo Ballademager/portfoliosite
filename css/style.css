@@ -206,6 +206,7 @@ p {
 .greybox2 {
   background-color: #222222;
   background-image: linear-gradient(315deg, #222222 0%, var(--primary) 100%);
+  border-radius: 10px;
 }
 .halfbox_top {
   border-top: 3px solid var(--accent);

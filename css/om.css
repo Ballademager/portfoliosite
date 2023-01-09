@@ -71,7 +71,8 @@ section ul {
   align-self: center;
 }
 #second_sec .greybox {
-  padding: var(--space-sm);
+  padding-right: var(--space-sm);
+  padding-left: var(--space-sm);
 }
 /* .makeflex {
   display: flex;
