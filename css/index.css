@@ -21,3 +21,24 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--space-md);
 }
+@media (max-width: 700px) {
+  .grid_3-1 {
+    grid-template-columns: 1fr;
+  }
+  .makeflex {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+  .btn2 {
+    border: var(--white) 1px solid;
+    min-width: 12vw;
+  }
+  .grid_1-1 {
+    grid-template-columns: 1fr;
+  }
+  .grid_1-1 img {
+    max-width: 100%;
+  }
+}
