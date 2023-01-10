@@ -2,7 +2,6 @@ main {
   margin: auto;
   justify-content: center;
   display: grid;
-  max-width: 900px;
 }
 #first_h1 {
   margin-top: 3vw;
