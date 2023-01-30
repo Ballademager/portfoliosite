@@ -1,3 +1,160 @@
+:root {
+  --primary: #145873;
+  --secondary: #b4b4b4;
+  --tertiary: #0f3d59;
+  --accent: #ff7d00;
+  --black: #000000;
+  --white: #ffffff;
+}
+.color-picker > fieldset {
+  border: 0;
+  display: flex;
+  gap: var(--space-lg);
+  background-color: var(--tertiary);
+  width: fit-content;
+  padding: var(--space-sm) var(--space-xl);
+  border-radius: 0 0 var(--space-sm) var(--space-sm);
+  margin-inline: auto;
+}
+
+.color-picker input[type="radio"] {
+  appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  outline: 3px solid var(--radio-color, currentColor);
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
+.color-picker input[type="radio"]:checked {
+  background-color: var(--radio-color);
+}
+
+.color-picker input[type="radio"]#dark {
+  --radio-color: #000000;
+}
+.color-picker input[type="radio"]#light {
+  --radio-color: #ffffff;
+}
+.color-picker input[type="radio"]#blue {
+  --radio-color: #3b52d9;
+}
+.color-picker input[type="radio"]#red {
+  --radio-color: #a60311;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+:root:has(#dark:checked) {
+  --primary: #145873;
+  --secondary: #b4b4b4;
+  --accent: #ff7d00;
+  --black: #000000;
+  --white: #ffffff;
+}
+:root:has(#dark:checked) {
+  --tertiary: #333333;
+}
+
+:root:has(#blue:checked) {
+  --primary: #3b52d9;
+  --secondary: #ffffff;
+  --accent: #6bb3f2;
+  --black: #c9e7f2;
+  --white: #161c40;
+}
+:root:has(#blue:checked) {
+  --tertiary: #6bb3f2;
+}
+:root:has(#blue:checked) .greybox {
+  color: var(--secondary);
+}
+:root:has(#blue:checked) #omtop {
+  color: var(--accent);
+}
+:root:has(#blue:checked) header li {
+  background-color: var(--accent);
+}
+:root:has(#blue:checked) header li:hover {
+  background-color: var(--secondary);
+}
+:root:has(#blue:checked) a {
+  color: var(--secondary);
+}
+:root:has(#blue:checked) a:hover {
+  color: var(--white);
+}
+
+:root:has(#red:checked) {
+  --primary: #d97979;
+  --secondary: #ffffff;
+  --accent: #bf495e;
+  --black: #a60311;
+  --white: #f2f2f2;
+}
+:root:has(#red:checked) {
+  --tertiary: #bf495e;
+}
+:root:has(#red:checked) header li:hover {
+  background-color: var(--primary);
+}
+
+:root:has(#light:checked) {
+  --primary: #ff7d00;
+  --secondary: #b4b4b4;
+  --accent: #145873;
+  --black: #ffffff;
+  --white: #000000;
+}
+:root:has(#light:checked) {
+  --tertiary: var(--accent);
+}
+:root:has(#light:checked) .greybox {
+  color: var(--black);
+}
+:root:has(#light:checked) #omtop {
+  color: var(--primary);
+}
+:root:has(#light:checked) header li {
+  background-color: var(--accent);
+}
+:root:has(#light:checked) header a {
+  color: var(--black);
+}
+:root:has(#light:checked) header li:hover {
+  background-color: var(--primary);
+}
+
+/* :root {
+  --primary: #ff7d00;
+  --secondary: #ffffff;
+  --accent: #145873;
+  --black: #b4b4b4;
+  --white: #000000;
+}
+.greybox {
+  color: var(--secondary);
+}
+#omtop {
+  color: var(--primary);
+}
+header li {
+  background-color: var(--primary);
+}
+header li :hover {
+  color: var(--white);
+} */
+
+/* Test over dette punkt */
+
 .grid_3-2 {
   display: grid;
   grid-template-columns: 3fr 2fr;
